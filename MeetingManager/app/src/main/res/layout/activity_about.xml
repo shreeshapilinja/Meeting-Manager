@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_logo"
+        android:layout_centerHorizontal="true"
+        android:text="MeetingManager"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:text="Version: 1st version" />
+
+    <TextView
+        android:id="@+id/developer_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_version"
+        android:layout_marginTop="24dp"
+        android:text="Developer Information:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/developer_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/developer_info"
+        android:layout_marginTop="8dp"
+        android:text="Developed by Shreesha B from the Artificial Intelligence and Machine Learning branch." />
+
+    <TextView
+        android:id="@+id/app_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/developer_info_text"
+        android:layout_marginTop="24dp"
+        android:text="Description or Overview:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/app_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_description"
+        android:layout_marginTop="8dp"
+        android:text="Welcome to my MeetingManager application! My app is designed to help you efficiently manage your meetings. With my Meeting Schedule activity, you can easily input the date, time, and agenda for all your meetings. The Meeting Info activity allows you to view all your meetings on a calendar and receive reminders when they are approaching. I also offer signup/login features so that you can keep track of all your meetings in one place. \n\n Thank you for choosing my app!"
+        />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_description_text"
+        android:layout_marginTop="24dp"
+        android:text="Contact:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/contact_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact"
+        android:layout_marginTop="8dp"
+        android:text="Contact me at shreeshapilinja@gmail.com."
+        />
+
+    <TextView
+        android:id="@+id/privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_info"
+        android:layout_marginTop="24dp"
+        android:text="Privacy Policy:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/privacy_policy_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/privacy_policy"
+        android:layout_marginTop="8dp"
+        android:text="The MeetingManager app collects user data and saves it locally on the user's device only."
+        />
+
+</RelativeLayout>
